@@ -4,10 +4,11 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.IO;
+//using SimpleServices;
 
 namespace ConsoleApp
 {
-    class Program
+    class Exercises
     {
         static void Main(string[] args)
         {
@@ -147,44 +148,5 @@ namespace ConsoleApp
         }
     }
 
-    public interface SimpleService
-    {
-        void AddEvent(string eventName, DateTime eventDate);
-        void RemoveEvent(string eventID);
-        void ModifyEvent(string eventID);
-    }
-    public class MobileSimpleService : SimpleService
-    {
-        public void AddEvent(string eventName, DateTime eventDate)
-        {
-            throw new NotImplementedException();
-        }
 
-        public void ModifyEvent(string eventID)
-        {
-            throw new NotImplementedException();
-        }
-
-        public void RemoveEvent(string eventID)
-        {
-            throw new NotImplementedException();
-        }
-    }
-    public class DesktopSimpleService : SimpleService
-    {
-        public void AddEvent(string eventName, DateTime eventDate)
-        {
-            throw new NotImplementedException();
-        }
-
-        public void ModifyEvent(string eventID)
-        {
-            throw new NotImplementedException();
-        }
-
-        public void RemoveEvent(string eventID)
-        {
-            throw new NotImplementedException();
-        }
-    }
 }
