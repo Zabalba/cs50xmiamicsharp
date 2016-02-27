@@ -9,8 +9,10 @@ namespace LaundryTimer
     [Table("Master")]
     public partial class Master
     {
+        // Added a Comment!
+
         public int ID { get; set; }
-        //comment
+        
         [Required]
         [StringLength(150)]
         public string UserName { get; set; }
