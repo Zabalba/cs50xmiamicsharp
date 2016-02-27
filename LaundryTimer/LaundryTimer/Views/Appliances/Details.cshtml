@@ -1,0 +1,90 @@
+﻿@model LaundryTimer.Appliance
+
+@{
+    ViewBag.Title = "Details";
+}
+
+<h2>Details</h2>
+
+<div>
+    <h4>Appliance</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.UserID)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.UserID)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.ApplianceTypeID)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.ApplianceTypeID)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.ApplianceName)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.ApplianceName)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.ApplianceUserNote)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.ApplianceUserNote)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.ApplianceCycleLength)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.ApplianceCycleLength)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.ApplianceActive)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.ApplianceActive)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.ApplianceCycleActive)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.ApplianceCycleActive)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.ApplianceCycleEnd)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.ApplianceCycleEnd)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.NotifyOnCompletion)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.NotifyOnCompletion)
+        </dd>
+
+    </dl>
+</div>
+<p>
+    @Html.ActionLink("Edit", "Edit", new { id = Model.ID }) |
+    @Html.ActionLink("Back to List", "Index")
+</p>
