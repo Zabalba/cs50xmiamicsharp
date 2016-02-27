@@ -10,7 +10,7 @@ namespace LaundryTimer
     public partial class Master
     {
         public int ID { get; set; }
-
+        //comment
         [Required]
         [StringLength(150)]
         public string UserName { get; set; }
